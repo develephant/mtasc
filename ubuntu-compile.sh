@@ -1,6 +1,7 @@
 #!/bin/bash
 
-## Compile MTASC 1.15 Ubuntu 14.04 ##
+## Compile MTASC 1.15 Ubuntu 14.04
+## GNU/Linux 3.13.0-52-generic x86_64 
 
 # Update repos
 apt-get update
