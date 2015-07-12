@@ -17,34 +17,34 @@ task :setup do
   mkdir_p "tmp"
   Dir.chdir("tmp") do
     # wget
-    if File.exist? "/usr/local/bin/wget"
-      puts "wget is already installed"
-    else
-      if !File.exist? "wget-#{WGET_VERSION}.tar.bz2"
-        system("curl -a -O http://ftp.gnu.org/gnu/wget/wget-#{WGET_VERSION}.tar.bz2")
-      end
-      system("bunzip2 wget-#{WGET_VERSION}.tar.bz2")
-      system("tar xf wget-#{WGET_VERSION}.tar")
-      Dir.chdir("wget-#{WGET_VERSION}") do
-        system("./configure")
-        system("make install")
-      end
-    end
+    # if File.exist? "/usr/local/bin/wget"
+    #   puts "wget is already installed"
+    # else
+    #   if !File.exist? "wget-#{WGET_VERSION}.tar.bz2"
+    #     system("curl -a -O http://ftp.gnu.org/gnu/wget/wget-#{WGET_VERSION}.tar.bz2")
+    #   end
+    #   system("bunzip2 wget-#{WGET_VERSION}.tar.bz2")
+    #   system("tar xf wget-#{WGET_VERSION}.tar")
+    #   Dir.chdir("wget-#{WGET_VERSION}") do
+    #     system("./configure")
+    #     system("make install")
+    #   end
+    # end
 
-    pcre
-    if File.exist? "/usr/local/bin/pcregrep"
-      puts "pcre is already installed"
-    else
-      if !File.exist? "pcre-#{PCRE_VERSION}.tar.bz2"
-        system("curl -a -O ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-#{PCRE_VERSION}.tar.bz2")
-      end
-      system("bunzip2 pcre-#{PCRE_VERSION}.tar.bz2")
-      system("tar xf pcre-#{PCRE_VERSION}.tar")
-      Dir.chdir("pcre-#{PCRE_VERSION}") do
-        system("./configure")
-        system("make install")
-      end
-    end
+    # pcre
+    # if File.exist? "/usr/local/bin/pcregrep"
+    #   puts "pcre is already installed"
+    # else
+    #   if !File.exist? "pcre-#{PCRE_VERSION}.tar.bz2"
+    #     system("curl -a -O ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-#{PCRE_VERSION}.tar.bz2")
+    #   end
+    #   system("bunzip2 pcre-#{PCRE_VERSION}.tar.bz2")
+    #   system("tar xf pcre-#{PCRE_VERSION}.tar")
+    #   Dir.chdir("pcre-#{PCRE_VERSION}") do
+    #     system("./configure")
+    #     system("make install")
+    #   end
+    # end
 
     # godi
     if File.exist? "/usr/local/godi/bin/ocaml"

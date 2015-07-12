@@ -3,6 +3,13 @@
 ## Compile MTASC 1.15 Ubuntu 14.04
 ## GNU/Linux 3.13.0-52-generic x86_64 
 
+#Clean?
+if [ $1 == 'clean' ];;
+  rm -rf /usr/local/src/*
+  rm /usr/local/bin/mtasc
+  rm -rf /use/local/bin/std*
+fi
+
 # Update repos
 apt-get update
 
@@ -27,7 +34,7 @@ git clone https://github.com/develephant/mtasc.git
 cd mtasc
 
 # Update version
-sed 's/PCRE_VERSION = "8.33"/PCRE_VERSION = "8.37"/' -i Rakefile
+#sed 's/PCRE_VERSION = "8.33"/PCRE_VERSION = "8.37"/' -i Rakefile
 
 # Start tools setup
 rake setup
