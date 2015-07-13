@@ -8,6 +8,7 @@ yum install \
   pcre pcre-devel \
   ruby ruby-devel \
   rubygem-rake \
+  s3cmd \
   zlib zlib-devel \
   wget
 

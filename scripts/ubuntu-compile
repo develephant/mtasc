@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Compile MTASC 1.15 Ubuntu
+## Compile MTASC 1.15 Ubuntu/Debian
 ## GNU/Linux x86_64
 
 #Clean?
@@ -22,6 +22,7 @@ apt-get install -y \
   libpcre3-dev \
   m4 \
   rake \
+  s3cmd \
   zlib1g \
   zlib1g-dev
 
