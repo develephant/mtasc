@@ -14,7 +14,7 @@ The GPL license does NOT imply that you source code will  have to be GPL or Open
 
 ## Notes for this fork
 
-This is a personal fork, not intended for production use. Its only aim is to be easy to compile on Ubuntu 14.04 and possibly other versions.
+This is a personal fork, not intended for production use. Its only aim is to be easy to compile on current versions of Ubuntu, Debian, CentOS, and possibly other releases.
 
 ## Contributors
 
@@ -24,4 +24,4 @@ This is a personal fork, not intended for production use. Its only aim is to be 
 
 ## Install
 
-See [INSTALL.mdown](https://github.com/develephant/mtasc/blob/master/INSTALL.mdown)
+See INSTALL.md in the extracted release version directory.

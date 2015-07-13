@@ -1,0 +1,33 @@
+#!/bin/bash
+# Fedora 22 - not working
+
+dnf update
+
+dnf groupinstall 'Development Tools'
+
+dnf install \
+  pcre pcre-devel \
+  ruby ruby-devel \
+  rubygem-rake \
+  zlib zlib-devel \
+  wget
+
+# Working DIR
+cd /usr/local/src
+
+# Git source
+git clone https://github.com/develephant/mtasc.git
+
+# Move to source dir
+cd mtasc
+
+# Start tools setup
+rake setup
+
+# Install
+rake install
+
+#Bye
+echo 'All Done!'
+
+exit 0

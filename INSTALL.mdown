@@ -1,8 +1,0 @@
-# compiling MTASC Community Fork (1.15)
-
-## Ubuntu 14.04 - digitalocean.com
-
-
-- run 'rake setup' to install wget, pcre and GODI
-- run 'rake install' to compile MTASC and install it to /usr/local/bin
-
