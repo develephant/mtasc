@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Compile MTASC 1.15 Ubuntu/Debian
-## GNU/Linux x86_64
+## GNU/Linux
 
 #Clean?
 if [ "$1" == 'clean' ]; then
