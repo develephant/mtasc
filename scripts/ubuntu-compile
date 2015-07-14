@@ -21,6 +21,8 @@ apt-get install -y \
   libpcre3 \
   libpcre3-dev \
   m4 \
+  ocaml \
+  ocaml-findlib \
   rake \
   s3cmd \
   zlib1g \
