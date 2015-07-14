@@ -43,4 +43,7 @@ rake setup
 # Install
 rake install
 
+# Useless soft link
+rm /usr/local/bin/mtasc
+
 exit 0
